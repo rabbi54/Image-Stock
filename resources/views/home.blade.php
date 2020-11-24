@@ -34,7 +34,7 @@
                                         <div class="carousel-item active img-fluid">
                                         
                                             <figure class="figure">
-                                                <img class="d-block w-100" src="{{ asset('post-images/' . $image->name )}}" alt="{{$image->name}}">
+                                                <img class="d-block w-100" src="{{ asset('storage/' . $image->name )}}" alt="{{$image->name}}">
                                                 <figcaption class="figure-caption">Posted by {{$post->user->name}}</figcaption>
                                             </figure>
                                     
@@ -43,7 +43,7 @@
                                     @else
                                         <div class="carousel-item img-fluid">
                                             <figure class="figure">
-                                                <img class="d-block w-100" src="{{ asset('post-images/' . $image->name )}}" alt="{{$image->name}}">
+                                                <img class="d-block w-100" src="{{ asset('storage/' . $image->name )}}" alt="{{$image->name}}">
                                                 <figcaption class="figure-caption">Posted by {{$post->user->name}}</figcaption>
                                             </figure>
                                         

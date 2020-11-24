@@ -61,10 +61,10 @@ class PostController extends Controller
             foreach($files as $file){
                 $timestamp = rand(10990, 1029901);
                 $fileName = $timestamp . $file->getClientOriginalName();
-                $file->move(public_path('post-images'), $fileName);
+                $path = $file->storeAs('post-images', $fileName);
 
                 $image = new Image([
-                    "name" => $fileName
+                    "name" => $path
                 ]);
 
                 if($post->images()->save($image)){

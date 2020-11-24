@@ -38,7 +38,7 @@
                                         <div class="carousel-item active img-fluid">
                                         
                                             <figure class="figure">
-                                                <img class="d-block w-100" src="{{ asset('post-images/' . $image->name )}}" alt="First slide">
+                                                <img class="d-block w-100" src="{{ asset('storage/' . $image->name )}}" alt="First slide">
                                                 <figcaption class="figure-caption">Posted by {{$post->user->name}}</figcaption>
                                             </figure>
                                     
@@ -47,7 +47,7 @@
                                 
                                         <div class="carousel-item img-fluid">
                                             <figure class="figure">
-                                                <img class="d-block w-100" src="{{ asset('post-images/' . $image->name )}}" alt="Second slide">
+                                                <img class="d-block w-100" src="{{ asset('storage/' . $image->name )}}" alt="Second slide">
                                                 <figcaption class="figure-caption">Posted by {{$post->user->name}}</figcaption>
                                             </figure>
                                         
